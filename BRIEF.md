@@ -29,7 +29,8 @@ Sito dedicato che riunisca identità del locale, carta, informazioni utili e acc
 - Direzione: mediterranea, elegante e accogliente, con colori caldi e tipografia curata.
 - Colori: terracotta `#B5522E`, terracotta scuro `#8E3D20`, sabbia `#F5EBDD`, crema `#FBF7F0`, oliva `#3E4A32`, testo `#2A2118`.
 - Font: Lora (titoli, semibold), Inter (testo e navigazione).
-- Immagini: nessuna foto del locale disponibile. È presente una **fotografia di riferimento** (tavola di tapas), dichiarata come tale nella pagina. Va sostituita con foto reali del locale appena disponibili, e va verificata la provenienza di quella di riferimento prima di qualsiasi uso pubblico.
+- File immagini attesi: `images/hero.jpg` (foto di copertina) e `images/logo.png` (logo). Se mancano, il sito usa il gradiente e il nome testuale.
+- Immagini: nessuna foto del locale disponibile nel repository. È presente una **fotografia di riferimento** (tavola di tapas), dichiarata come tale nella pagina. Va sostituita con foto reali del locale appena disponibili, e va verificata la provenienza di quella di riferimento prima di qualsiasi uso pubblico.
 
 ## 4. Struttura delle sezioni
 
