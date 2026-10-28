@@ -1,0 +1,255 @@
+/* La Calita · Demo Rivela · direzione mediterranea, calda ed elegante */
+
+:root {
+  --terracotta: #B5522E;
+  --terracotta-scuro: #8E3D20;
+  --sabbia: #F5EBDD;
+  --crema: #FBF7F0;
+  --oliva: #3E4A32;
+  --testo: #2A2118;
+  --testo-suave: #5E5145;
+  --linea: rgba(42, 33, 24, 0.14);
+  --radius: 14px;
+  --serif: "Lora", Georgia, serif;
+  --sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--crema);
+  color: var(--testo);
+  font-family: var(--sans);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+img { max-width: 100%; height: auto; display: block; }
+a { color: var(--terracotta-scuro); }
+
+.demo-banner {
+  background: var(--oliva);
+  color: var(--sabbia);
+  text-align: center;
+  font-size: 0.8rem;
+  padding: 0.45rem 16px;
+  letter-spacing: 0.02em;
+}
+
+/* Cabecera */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem 1rem;
+  padding: 0.9rem 16px;
+  background: rgba(251, 247, 240, 0.96);
+  border-bottom: 1px solid var(--linea);
+}
+
+.brand {
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: var(--testo);
+  text-decoration: none;
+}
+
+.nav { display: flex; flex-wrap: wrap; gap: 0.25rem 1rem; }
+.nav a {
+  color: var(--testo-suave);
+  text-decoration: none;
+  font-size: 0.95rem;
+  padding: 0.25rem 0;
+}
+.nav a:hover, .nav a:focus-visible { color: var(--terracotta); }
+
+/* Hero */
+.hero {
+  min-height: 78vh;
+  display: flex;
+  align-items: flex-end;
+  padding: 3rem 16px;
+  background:
+    linear-gradient(180deg, rgba(42, 33, 24, 0.15) 0%, rgba(42, 33, 24, 0.7) 100%),
+    linear-gradient(135deg, #7A3B22 0%, var(--terracotta) 45%, var(--oliva) 100%);
+  color: var(--crema);
+}
+
+.hero-text { max-width: 1100px; margin: 0 auto; width: 100%; }
+
+.eyebrow {
+  margin: 0 0 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.8rem;
+  color: var(--sabbia);
+}
+
+.hero h1 {
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: clamp(3rem, 9vw, 6rem);
+  line-height: 1;
+  margin: 0 0 0.75rem;
+}
+
+.lead {
+  font-size: clamp(1.05rem, 2.4vw, 1.25rem);
+  max-width: 34rem;
+  margin: 0 0 1.5rem;
+  color: var(--sabbia);
+}
+
+.actions { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+
+/* Botones */
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.4rem;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+  border: 2px solid transparent;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+.btn:hover { transform: translateY(-2px); }
+
+.btn-primary { background: var(--terracotta); color: #fff; }
+.btn-primary:hover { background: var(--terracotta-scuro); }
+
+.btn-ghost { border-color: var(--crema); color: var(--crema); }
+.btn-ghost:hover { background: rgba(251, 247, 240, 0.12); }
+
+/* Secciones */
+.section {
+  padding: 3.5rem 16px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.kicker {
+  margin: 0 0 0.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.78rem;
+  color: var(--terracotta);
+  font-weight: 600;
+}
+
+h2 {
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: clamp(1.6rem, 4vw, 2.3rem);
+  line-height: 1.2;
+  margin: 0 0 1rem;
+}
+
+h3 { font-family: var(--serif); font-weight: 600; margin: 0 0 0.25rem; font-size: 1.2rem; }
+
+.note {
+  font-size: 0.9rem;
+  color: var(--testo-suave);
+  font-style: italic;
+}
+
+.intro { max-width: 760px; }
+
+.intro.section, .section.intro { background: transparent; }
+
+/* Carta */
+.carta { background: var(--sabbia); max-width: none; }
+.carta > * { max-width: 1100px; margin-left: auto; margin-right: auto; }
+.carta { padding-left: 16px; padding-right: 16px; }
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.card {
+  display: block;
+  background: var(--crema);
+  border: 1px solid var(--linea);
+  border-left: 4px solid var(--terracotta);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.4rem;
+  text-decoration: none;
+  color: var(--testo);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card span { font-size: 0.9rem; color: var(--testo-suave); }
+.card:hover { transform: translateY(-3px); box-shadow: 0 10px 24px rgba(42, 33, 24, 0.1); }
+
+.reference { margin: 0; }
+.reference img {
+  width: 100%;
+  border-radius: var(--radius);
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+.reference figcaption {
+  font-size: 0.85rem;
+  color: var(--testo-suave);
+  margin-top: 0.5rem;
+}
+
+/* Reservas y ubicación */
+.reservas { max-width: 760px; }
+.reservas .btn { margin-top: 0.5rem; }
+
+.ubicacion address {
+  font-style: normal;
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Propuesta Rivela */
+.rivela {
+  background: var(--oliva);
+  color: var(--crema);
+  border-radius: var(--radius);
+  margin: 0 auto 3rem;
+  max-width: 1100px;
+  padding: 2.5rem 1.5rem;
+}
+.rivela .kicker { color: var(--sabbia); }
+.rivela .note { color: var(--sabbia); }
+.rivela a { color: var(--sabbia); }
+
+/* Pie */
+.site-footer {
+  text-align: center;
+  padding: 2rem 16px;
+  background: var(--testo);
+  color: var(--sabbia);
+  font-size: 0.9rem;
+}
+.site-footer p { margin: 0.2rem 0; }
+
+/* Tablet (600px+) */
+@media (min-width: 600px) {
+  .cards { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Escritorio (768px+) */
+@media (min-width: 768px) {
+  .site-header { padding: 1rem 32px; }
+  .section, .hero, .carta { padding-left: 32px; padding-right: 32px; }
+  .hero { padding-left: 32px; padding-right: 32px; }
+}
+
+/* Escritorio amplio (1024px+) */
+@media (min-width: 1024px) {
+  .cards { grid-template-columns: repeat(4, 1fr); }
+  .rivela { padding: 3rem 2.5rem; }
+}
