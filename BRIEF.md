@@ -1,81 +1,33 @@
-# BRIEF · La Calita (demo Rivela)
+# BRIEF · La Calita / Rivela
+Aggiornato il 30 ottobre 2026. Documento modificabile.
 
-> Documento modificabile. Aggiornare le sezioni man mano che arrivano dati confermati dal locale.
+## Obiettivo e vincoli
+Demo sofisticata e personale da mostrare al ristorante, con priorità a telefono e tablet. HTML e CSS senza framework. Sito in spagnolo, comunicazioni con Marco in italiano. Non usare Sites. Non contattare il ristorante. Foto e logo già autorizzati: non richiedere di nuovo il permesso. Conservare «Propuesta independiente de Rivela · Demo no oficial». Nessuna scadenza artificiale, nessun modulo o tracciamento.
 
-## 1. Dati dell'attività e fonti
+Repository: https://github.com/profondosud/rivela-la-calita
+Demo: https://profondosud.github.io/rivela-la-calita/
 
-| Dato | Valore | Stato | Fonte |
-|---|---|---|---|
-| Nome | La Calita | Verificato | Linktree del locale |
-| Indirizzo | C/ de la Tapinería, 16, 46001 Valencia | Verificato (più fonti) | Ricerca web (OpenTable, isitfunky, gastroranking) |
-| Telefono | 960 44 38 12 | **Non verificato** | Dato iniziale; nessuna fonte consultata lo conferma |
-| Presenza online | https://linktr.ee/lacalita | Verificato | Linktree |
-| Carta (ES) | Google Drive, "Nuestra carta" | Verificato (link presente) | Linktree |
-| Carta (EN) | Google Drive, "Our menu" | Verificato (link presente) | Linktree |
-| Bebidas | Google Drive, "Bebidas ~ Drinks" | Verificato (link presente) | Linktree |
-| Alérgenos | Google Drive, "Carta Alergenos" | Verificato (link presente) | Linktree |
-| Prenotazioni | https://www.covermanager.com/reserve/module_restaurant/restaurante-lacalita/spanish | Link presente nel Linktree; **da testare prima della consegna** | Linktree |
-| Orari | — | **Da confermare** | Nessuna fonte affidabile trovata |
-| Instagram | — | **Da confermare** (una fonte riporta @lacalita, non verificato) | Ricerca web |
+## Identità visiva
+Riferimento di qualità: il restyling Rivela per El Matador. Identità distinta: verde petrolio #164e4b, avorio #f7f3e9, salvia e oro sabbia. Playfair Display e DM Sans; marchio testuale senza inventare un logo ufficiale. Copertina ad arco con fotografia reale, impaginazione editoriale e immagini grandi. Rivela discreta nel footer.
 
-Nota: il Linktree non riporta indirizzo, telefono né orari. Le fonti trovate per indirizzo e orari sono di terze parti.
+## Struttura e testi
+Hero «Un pequeño rincón. Un gran plan.»; presentazione di Ciutat Vella e cucina casual; croquetas, burrata e pulpo in evidenza; carta in tre sezioni apribili; documenti ES/EN, bevande e allergeni; terrazza; prenotazioni; indirizzo; crediti.
+La carta è una selezione di piatti pubblicati, senza prezzi che potrebbero essere superati. Testi descrittivi rielaborati. Nessuna storia, premio o recensione inventati.
+Pulsante prenotazione fisso su smartphone; navigazione da tastiera, movimento ridotto e spazio sicuro per iPhone.
 
-## 2. Obiettivo del sito
+## Fonti consultate il 30/10/2026
+- https://linktr.ee/lacalita — collegamenti a carta ES, EN, bevande, allergeni e CoverManager.
+- https://63344fb877701.site123.me/ — sito di La Calita con indirizzo Tapinería 16, terrazza in Plaza del Miracle del Mocadoret e carta. Fonte della selezione di piatti. Data di aggiornamento della carta non esposta: disponibilità attuale non garantita.
+- https://www.covermanager.com/reserve/module_restaurant/restaurante-lacalita/spanish — pagina raggiungibile; la ricerca testuale restituisce un'app dinamica. Non è stata inviata alcuna prenotazione.
+- https://eltipoquenuncacenaencasa.com/la-calita/ — articolo del 16/07/2023 con fotografie reali di ingresso e terrazza. Non usare come conferma dello stato attuale degli arredi.
+- https://www.opentable.es/r/la-calita-valencia — riscontro su ubicazione e carattere informale del locale.
+- https://es.restaurantguru.com/La-Calita-Valencia e https://pueblito.es/valencia/la-calita?lang=es — numeri telefonici discordanti. Nessun telefono pubblicato nella demo. Orari non verificati in fonte primaria, esclusi.
 
-Sito dedicato che riunisca identità del locale, carta, informazioni utili e accesso alle prenotazioni, al posto della semplice lista di link. Il locale ha già carta e prenotazioni online: la demo li valorizza, non li presenta come assenti.
+## Provenienza delle fotografie
+- images/croquetas.jpg: https://images.cdn-files-a.com/uploads/6825227/800_63cbd9eb9b7d7.jpg — fotografia pubblicata nella carta di La Calita.
+- images/terraza.jpg: https://eltipoquenuncacenaencasa.com/wp-content/uploads/2019/12/la-calita-el-tipo-que-nunca-cena-en-casa-14.jpg — ingresso del locale.
+- images/mesa.jpg: https://eltipoquenuncacenaencasa.com/wp-content/uploads/2019/12/la-calita-el-tipo-que-nunca-cena-en-casa-16.jpg — terrazza.
+Crediti presenti nel footer. La foto generica di tapas della vecchia demo non è più utilizzata.
 
-## 3. Identità grafica
-
-- Direzione: mediterranea, elegante e accogliente, con colori caldi e tipografia curata.
-- Colori: terracotta `#B5522E`, terracotta scuro `#8E3D20`, sabbia `#F5EBDD`, crema `#FBF7F0`, oliva `#3E4A32`, testo `#2A2118`.
-- Font: Lora (titoli, semibold), Inter (testo e navigazione).
-- File immagini attesi: `images/hero.jpg` (foto di copertina) e `images/logo.png` (logo). Se mancano, il sito usa il gradiente e il nome testuale.
-- Immagini: nessuna foto del locale disponibile nel repository. È presente una **fotografia di riferimento** (tavola di tapas), dichiarata come tale nella pagina. Va sostituita con foto reali del locale appena disponibili, e va verificata la provenienza di quella di riferimento prima di qualsiasi uso pubblico.
-
-## 4. Struttura delle sezioni
-
-1. Banner: "Propuesta independiente de Rivela · Demo no oficial"
-2. Cabecera con navigazione (Carta, Reservas, Ubicación, Tu sitio)
-3. Hero: nome del locale, messaggio chiaro, pulsanti "Reservar mesa" e "Ver la carta"
-4. Presentazione breve del locale (testo da validare)
-5. Carta: accesso ai documenti ufficiali (carta ES, menu EN, bebidas, alérgenos) e fotografia di riferimento
-6. Reservas: pulsante verso il sistema di prenotazione
-7. Ubicación: indirizzo, link a Google Maps
-8. Propuesta Rivela: spiegazione, prezzo orientativo, contatti
-9. Pie di pagina con dichiarazione di demo
-
-## 5. Testi in spagnolo
-
-Sono già nella pagina `index.html`. Riassunto dei messaggi chiave:
-
-- Titolo: **La Calita**
-- Sottotitolo: "Un lugar para compartir mesa en el casco antiguo de Valencia. Carta, bebidas, alérgenos y reservas en un solo sitio."
-- Pulsanti: "Reservar mesa", "Ver la carta", "Ir a reservas", "Abrir en Google Maps"
-- Rivela: "Rivela puede realizar el sitio de tu negocio". Precio: "Desde 350 € (precio orientativo, a definir según el proyecto)." Contatto: rivelaastudio@gmail.com
-
-## 6. Funzionalità previste
-
-- Pagina statica, HTML + CSS, senza framework e senza JavaScript.
-- Responsive: layout testato per smartphone, tablet e computer (breakpoint 600px, 768px, 1024px).
-- Link esterni con `target="_blank"` e `rel="noopener"`.
-- Nessun modulo, nessuna raccolta dati dei visitatori, nessuna prenotazione simulata.
-- Nessuna analisi o tracciamento.
-
-## 7. Dati da confermare
-
-- [ ] Telefono reale del locale (960 44 38 12 non verificato)
-- [ ] Orari di apertura
-- [ ] Instagram ufficiale
-- [ ] Funzionamento del link di prenotazione CoverManager
-- [ ] Testo di presentazione del locale (storia, cucina, ambiente) con il locale
-- [ ] Autorizzazione all'uso dei documenti della carta nel sito (sono dell'attività)
-- [ ] Provenienza della fotografia di riferimento
-
-## 8. Modifiche successive
-
-- Sostituire la fotografia di riferimento con foto reali del locale.
-- Inserire il testo di presentazione confermato.
-- Inserire telefono e orari confermati nella sezione Ubicación.
-- Valutare una presentazione della carta direttamente in pagina (piatti, prezzi) solo con la carta ufficiale del locale; nessun piatto o prezzo va inventato.
-- Aggiornare il link di prenotazione dopo il test.
-- Rimuovere la dicitura "Demo no oficial" solo in caso di accordo con il locale e nuovo sito approvato.
+## Da confermare prima del sito definitivo
+Telefono, orari, carta e prezzi aggiornati, profilo Instagram ufficiale e aspetto attuale della terrazza. Verificare l'intero percorso CoverManager senza creare prenotazioni di prova. Rimuovere «Demo no oficial» solo su richiesta e accordo per il sito definitivo.
